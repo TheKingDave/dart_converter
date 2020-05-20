@@ -1,3 +1,5 @@
+# Dart Converter
+
 A library for Dart developers.
 
 Created from templates made available by Stagehand under a BSD-style
@@ -7,16 +9,12 @@ Created from templates made available by Stagehand under a BSD-style
 
 A simple usage example:
 
-```dart
-import 'package:dart_json_converter/dart_json_converter.dart';
+## Example
 
-main() {
-  var awesome = new Awesome();
-}
-```
+[Example](./example)
 
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/TheKingDave/dart_converter/issues

@@ -1,7 +1,5 @@
-import 'package:dart_json_converter/dart_json_converter.dart';
-import 'package:dart_json_converter/src/annotations.dart';
-import 'package:dart_json_converter/src/serializer.dart';
 import 'package:intl/intl.dart';
+import 'package:dart_json_converter/dart_converter.dart';
 
 final moneyFormat = NumberFormat.currency(locale: 'de_AT', symbol: '€');
 
