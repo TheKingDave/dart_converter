@@ -1,5 +1,4 @@
-import './constants.dart';
-
+import 'constants.dart';
 import 'annotations.dart';
 
 class ConvertGlobalConfig {
@@ -7,7 +6,7 @@ class ConvertGlobalConfig {
     null: Convert(
         ignoreUnknowns: true, namingConvention: NamingConvention.noChange)
   };
-  
+
   static ConvertField initConvertField = ConvertField(exclude: false);
 
   static void addConfig(Convert convert, [String group]) {

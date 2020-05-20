@@ -1,9 +1,8 @@
 import 'dart:mirrors';
 
-import './errors.dart';
-import './globalConfig.dart';
-import './serializer.dart';
-
+import 'errors.dart';
+import 'globalConfig.dart';
+import 'serializer.dart';
 import 'annotations.dart';
 import 'utils.dart';
 
@@ -69,7 +68,8 @@ class Converter {
     return ret;
   }
 
-  Map<String, dynamic> fromMap(dynamic object, [List<String> groups = const []]) {
+  Map<String, dynamic> fromMap(dynamic object,
+      [List<String> groups = const []]) {
     final objectMirror = reflectClass(object.runtimeType);
 
     final convertMap = Utils.getFromMetadata<Convert>(objectMirror);
