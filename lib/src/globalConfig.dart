@@ -1,4 +1,4 @@
-import 'package:dart_json_converter/src/constants.dart';
+import './constants.dart';
 
 import 'annotations.dart';
 

@@ -1,5 +1,5 @@
-import 'package:dart_json_converter/src/constants.dart';
-import 'package:dart_json_converter/src/utils.dart';
+import './constants.dart';
+import './utils.dart';
 
 const convert = Convert();
 

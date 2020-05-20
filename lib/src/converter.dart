@@ -1,8 +1,8 @@
 import 'dart:mirrors';
 
-import 'package:dart_json_converter/src/errors.dart';
-import 'package:dart_json_converter/src/globalConfig.dart';
-import 'package:dart_json_converter/src/serializer.dart';
+import './errors.dart';
+import './globalConfig.dart';
+import './serializer.dart';
 
 import 'annotations.dart';
 import 'utils.dart';
