@@ -20,9 +20,17 @@ void main() {
       doubleField: 22.238,
       apiField: 'only in api');
 
-  print(converter.toMap(test));
-  print(converter.toMap(test, ['api']));
-  print(converter.toMap(test, ['api', 'api_x']));
+  final groupList = <List<String>>[
+    [],
+    ['api'],
+    ['api', 'api_c']
+  ];
+
+  for (var list in groupList) {
+    final map = converter.toMap(test, list);
+    print(map);
+    print(converter.fromMap<TestJson>(map, list));
+  }
 }
 
 @convert
@@ -44,6 +52,12 @@ class TestJson {
   @ConvertField(exclude: true)
   @ConvertField(group: 'api', exclude: false)
   String apiField;
+
+  @override
+  String toString() {
+    return 'TestJson{stringField: $stringField, excludedField: $excludedField, '
+        'intField: $intField, doubleField: $doubleField, apiField: $apiField}';
+  }
 
   TestJson(
       {this.stringField,

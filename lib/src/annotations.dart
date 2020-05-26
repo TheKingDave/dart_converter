@@ -15,6 +15,14 @@ class Convert implements IWithGroup {
 
   const Convert({this.ignoreUnknowns, this.namingConvention, group = notSet})
       : _group = group;
+  
+  Convert copyWith(Convert other) {
+    if(other == null) return this;
+    return Convert(
+      ignoreUnknowns: other.ignoreUnknowns ?? ignoreUnknowns,
+      namingConvention: other.namingConvention ?? namingConvention,
+    );
+  }
 }
 
 const convertField = ConvertField();
