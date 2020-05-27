@@ -1,6 +1,5 @@
 import 'dart:mirrors';
 
-import 'errors.dart';
 import 'globalConfig.dart';
 import 'serializer.dart';
 import 'annotations.dart';
